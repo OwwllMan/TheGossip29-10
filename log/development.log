@@ -1,0 +1,100 @@
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateAuthors (20181029082109)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "authors" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "author" varchar, "content" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181029082109_create_authors.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181029082109"]]
+  ↳ bin/rails:9
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-10-29 08:29:00.132893"], ["updated_at", "2018-10-29 08:29:00.132893"]]
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mAuthor Create (0.8ms)[0m  [1m[32mINSERT INTO "authors" ("author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Cathie"], ["content", "Perferendis impedit vel."], ["created_at", "2018-10-29 08:29:58.627248"], ["updated_at", "2018-10-29 08:29:58.627248"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mAuthor Create (0.4ms)[0m  [1m[32mINSERT INTO "authors" ("author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Derrick"], ["content", "Debitis earum qui."], ["created_at", "2018-10-29 08:29:58.632979"], ["updated_at", "2018-10-29 08:29:58.632979"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mAuthor Create (0.5ms)[0m  [1m[32mINSERT INTO "authors" ("author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Grant"], ["content", "Perspiciatis architecto accusamus."], ["created_at", "2018-10-29 08:29:58.636831"], ["updated_at", "2018-10-29 08:29:58.636831"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mAuthor Create (0.4ms)[0m  [1m[32mINSERT INTO "authors" ("author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Sergio"], ["content", "Molestiae nobis aperiam."], ["created_at", "2018-10-29 08:29:58.642053"], ["updated_at", "2018-10-29 08:29:58.642053"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mAuthor Create (0.3ms)[0m  [1m[32mINSERT INTO "authors" ("author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Aurelio"], ["content", "Architecto voluptas officiis."], ["created_at", "2018-10-29 08:29:58.646019"], ["updated_at", "2018-10-29 08:29:58.646019"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mAuthor Create (0.6ms)[0m  [1m[32mINSERT INTO "authors" ("author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Margarete"], ["content", "Et vero libero."], ["created_at", "2018-10-29 08:29:58.649793"], ["updated_at", "2018-10-29 08:29:58.649793"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mAuthor Create (0.3ms)[0m  [1m[32mINSERT INTO "authors" ("author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Sharie"], ["content", "Ab quisquam voluptas."], ["created_at", "2018-10-29 08:29:58.654114"], ["updated_at", "2018-10-29 08:29:58.654114"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mAuthor Create (0.3ms)[0m  [1m[32mINSERT INTO "authors" ("author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Domitila"], ["content", "Ipsum vero possimus."], ["created_at", "2018-10-29 08:29:58.657998"], ["updated_at", "2018-10-29 08:29:58.657998"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mAuthor Create (0.4ms)[0m  [1m[32mINSERT INTO "authors" ("author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Mike"], ["content", "Et dicta fugiat."], ["created_at", "2018-10-29 08:29:58.662573"], ["updated_at", "2018-10-29 08:29:58.662573"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mAuthor Create (0.4ms)[0m  [1m[32mINSERT INTO "authors" ("author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Sharron"], ["content", "Maiores dolores quia."], ["created_at", "2018-10-29 08:29:58.666393"], ["updated_at", "2018-10-29 08:29:58.666393"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+Started GET "/" for 127.0.0.1 at 2018-10-29 09:46:11 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/mathieu/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/rack-2.0.5/lib/rack/method_override.rb:22
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/mathieu/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/mathieu/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (6.3ms)
+Completed 200 OK in 32ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
