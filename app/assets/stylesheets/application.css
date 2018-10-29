@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+ .container{
+ 	width:90%;
+ }
+
+ header ul li{
+ 	padding-left: 10px;
+ }
